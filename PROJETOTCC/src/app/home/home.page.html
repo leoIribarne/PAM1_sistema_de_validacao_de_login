@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PROJETO TCC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-list>
+  <ion-item>
+ <ion-input [(ngModel)]="nomeusuario"  label="nomeusuário"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="senhausuario"  label="senhausuario" type="password"></ion-input>
+     </ion-item>
+     <ion-button (click)="validarLogin()">Entrar</ion-button>
+</ion-list>
+  
+</ion-content>
